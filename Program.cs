@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MoodAnalyserProblem
 {
@@ -6,7 +6,8 @@ namespace MoodAnalyserProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Handled null exception");
+            string message = MoodAnalyser.AnalyseMood("I am Happy");
+            Console.WriteLine("Mood is " + message);
         }
     }
 }
